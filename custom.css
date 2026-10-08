@@ -1,0 +1,92 @@
+/* Custom enhancements for Ivy School Academic University */
+
+/* Sticky Header Styling */
+header.elementor-element-5cccc1e.is-sticky-active {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 9999 !important;
+  background-color: #ffffff !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08) !important;
+  transition: all 0.3s ease-in-out !important;
+}
+
+.thim-ekit-dark-mode header.elementor-element-5cccc1e.is-sticky-active {
+  background-color: #1c1919 !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* Mobile responsive menu */
+@media (max-width: 1024px) {
+  .ivy-mobile-menu-toggle {
+    display: block !important;
+  }
+
+  .elementor-widget-thim-ekits-nav-menu .thim-ekits-menu__wrapper {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #ffffff;
+    z-index: 9998;
+    padding: 24px;
+    display: none;
+    overflow-y: auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  }
+
+  .thim-ekit-dark-mode .elementor-widget-thim-ekits-nav-menu .thim-ekits-menu__wrapper {
+    background: #1c1919;
+    color: #ffffff;
+  }
+
+  .elementor-widget-thim-ekits-nav-menu .thim-ekits-menu__wrapper.is-mobile-open {
+    display: block !important;
+  }
+}
+
+/* Image responsiveness and sharpness */
+img {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Smooth transitions */
+a, button {
+  transition: all 0.25s ease-in-out;
+}
+
+/* Program Card Hover Effects */
+.elementor-element-a99a440 .e-con:hover {
+  transform: translateY(-4px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Stats counter smooth fade-in */
+.stats-animated {
+  animation: fadeIn 0.8s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0.6;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Dark mode smooth transition */
+html, body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hide third-party theme demo sales pills */
+#tp_style_selector, .tp-style-selector {
+  display: none !important;
+}
+
